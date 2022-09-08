@@ -237,15 +237,17 @@ class CODController extends Controller
 
     public function addAvailableCourses(Request $request){
 
-        $request->validate([
-            'intake_id' => 'required',
-            'course_id' => 'required',
-            'campus_id' => 'required',
-            'course_code' => 'required',
-            'attendance_id' => 'required',
-            'attendance_code' => 'required',
+//        $request->validate([
+//            'intake_id' => 'required',
+//            'course_id' => 'required',
+//            'campus_id' => 'required',
+//            'course_code' => 'required',
+//            'attendance_id' => 'required',
+//            'attendance_code' => 'required',
+//
+//        ]);
 
-        ]);
+        return $request->json()->all();
 
 
         print_r(json_encode($request->json()->all()));
