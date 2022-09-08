@@ -246,10 +246,6 @@ class CODController extends Controller
 //            'attendance_code' => 'required',
 //
 //        ]);
-
-        return $request->json()->all();
-
-
         print_r(json_encode($request->json()->all()));
 
 /*
